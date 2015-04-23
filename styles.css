@@ -1,0 +1,157 @@
+
+
+body {
+	font-family: 'Courier New', Courier, monospace;
+	margin:0;
+	padding:0;
+	line-height: 1.5em;
+}
+
+#topsection{
+	background: blue;
+}
+
+#contentwrapper{
+	float: left;
+	width: 100%;
+}
+
+#contentcolumn{
+	margin-left: 200px; /*Set left margin to LeftColumnWidth*/
+	padding: 1em 1em 2em 2em;
+}
+
+#leftcolumn{
+	float: left;
+	width: 200px; /*Width of left column*/
+	margin-left: -100%;
+	background: #C8FC98;
+	padding: 1em .5em 1em 1em;
+	height: 100%;
+}
+
+#footer{
+	position: absolute; 
+	bottom: 0;
+	clear: left;
+	width: 100%;
+	background: black;
+	color: #FFF;
+	text-align: center;
+	padding: 1em 0;
+}
+
+/* Navigation */
+
+nav {
+	clear:both;
+	float:left;
+	width:100%;
+}
+
+nav ul {
+	width:100%;
+	padding:0;
+}
+
+nav ul li {
+	display:block;
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+nav ul li a {
+	display:block;
+	float:left;
+	margin:0 0 0 .2em;
+	padding:1em;
+	text-align:center;
+	background:#eee;
+	color:#000;
+	text-decoration:none;
+	position:relative;
+	left:15px;
+	line-height:1.3em;
+}
+
+nav ul li a:hover {
+	background:#369;
+	color:#fff;
+}
+
+nav ul li a.active,
+nav ul li a.active:hover {
+	color:#fff;
+	background:#000;
+	font-weight:bold;
+}
+
+nav ul li a span {
+	display:block;
+}
+
+
+/* ####### responsive layout CSS ####### */
+
+@media (max-width: 700px){ /* responsive layout break point */
+
+	#contentwrapper{
+	float: none;
+	}
+	
+	#leftcolumn{
+	padding: .5em;
+	float: none;
+	width: 100%;
+	margin-left: 0;
+	}
+	
+	#contentcolumn{
+	padding: .5em;
+	margin-left: 0;
+	}
+
+	/* responsive navigation */
+
+	nav ul {
+			list-style:none;
+			padding:0;
+		}
+
+		nav ul li {
+			width: 100%;
+			list-style:none;
+			margin:0;
+			padding-right:.2em;
+			border-bottom: 1px solid black;
+		}
+
+		nav ul li a {
+			width: 85%;
+			margin:.5em;
+			text-align: center;
+			float:none;
+			color:#000;
+			background:#eee;
+			text-decoration:none;
+		}
+
+		nav ul li a:hover {
+			background:#369;
+			color:#fff;
+		}
+
+		nav ul li a.active,
+		nav ul li a.active:hover { 
+			color:#fff;
+			background:#000;
+			font-weight:bold;
+		}
+
+		nav ul li a span {
+			display:block;
+		}
+
+
+}
